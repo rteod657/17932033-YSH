@@ -11,17 +11,25 @@ int main(void)
 	switch (c)
 	{
 	case '+':
-		printf("operation value   :  %d+%d=%d", a, b, a + b);
+		printf("operation value   :  %d+%d=%d\n\n", a, b, a + b);
 		break;
+
 	case '-':
-		printf("operation value  :  %d-%d=%d", a, b, a - b);
+		printf("operation value  :  %d-%d=%d\n\n", a, b, a - b);
 		break;
+
 	case '*':
-		printf("operation value  :  %d*%d=%d", a, b, a * b);
+		printf("operation value  :  %d*%d=%d\n\n", a, b, a * b);
 		break;
+
 	case '/':
-		printf("operation value  :  %d/%d=%d", a, b, a /b);
+		printf("operation value  :  %d/%d=%d\n\n", a, b, a /b);
 		break;
+
+	default:
+	  printf("Arithmetic operation is wrong\n\n");
+	  break;
+	  
 	}
 	return 0;
 }
