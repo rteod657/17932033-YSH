@@ -2,34 +2,38 @@
 
 int main(void)
 {
-	int a = 0, b = 0;
-	char c;         //연산 변수(+,-,*,/)
+  int a = 0, b = 0;
+  char c;
 
-	printf("Enter your arithmetic operation : ");
-	scanf_s("%d %c %d", &a, &c, 1,& b);
+  printf("Please enter your arithmetic operation :  ");
+  scanf_s("%d%c%d", &a, &c, 1, &b);
 
-	switch (c)
-	{
-	case '+':
-		printf("operation value   :  %d+%d=%d\n\n", a, b, a + b);
-		break;
+  switch (c)
+  {
+  case '+':
+	printf("operation value   :  %d+%d=%d", a, b, a + b);
+	printf("operation value   :  %d+%d=%d\n\n", a, b, a + b);
+	break;
 
-	case '-':
-		printf("operation value  :  %d-%d=%d\n\n", a, b, a - b);
-		break;
+  case '-':
+	printf("operation value  :  %d-%d=%d", a, b, a - b);
+	printf("operation value  :  %d-%d=%d\n\n", a, b, a - b);
+	break;
 
-	case '*':
-		printf("operation value  :  %d*%d=%d\n\n", a, b, a * b);
-		break;
+  case '*':
+	printf("operation value  :  %d*%d=%d", a, b, a * b);
+	printf("operation value  :  %d*%d=%d\n\n", a, b, a * b);
+	break;
 
-	case '/':
-		printf("operation value  :  %d/%d=%d\n\n", a, b, a /b);
-		break;
+  case '/':
+	printf("operation value  :  %d/%d=%d", a, b, a / b);
+	printf("operation value  :  %d/%d=%d\n\n", a, b, a / b);
+	break;
 
-	default:
-	  printf("Arithmetic operation is wrong\n\n");
-	  break;
-	  
-	}
-	return 0;
+  default:
+	printf("Arithmetic operation is wrong\n\n");
+	break;
+
+  }
+  return 0;
 }
