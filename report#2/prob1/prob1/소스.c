@@ -14,16 +14,24 @@ int main()
 	printf("패스워드 입력 : ");
 	scanf_s("%s", user, 15);
 
-	if (strcmp(password, user) != 0) // password와 user의 문자열을 비교 
-	{
-	  printf("일치하지 않습니다\n\n");
-	}
+	equal(password, user);
 
-	else
-	{
-	  printf("일치합니다\n\n");
-	  break;
 	}
-  }
   return 0;
+  }
+ 
+
+
+void equal(char password[], char user[])
+{
+  if (strcmp(password[], user[]) != 0) // password와 user의 문자열을 비교 
+  {
+	printf("일치하지 않습니다\n\n");
+  }
+
+  else
+  {
+	printf("일치합니다\n\n");
+	break;
+  }
 }
